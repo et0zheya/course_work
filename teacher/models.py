@@ -19,7 +19,7 @@ class CustomUser(AbstractUser):
 
 class Task(models.Model):
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=50, verbose_name='Название')
+    name = models.CharField(max_length=50, verbose_name='Дисциплина')
     description = models.CharField(max_length=500, verbose_name='Описание')
 
     def __str__(self):
